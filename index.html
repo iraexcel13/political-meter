@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Political Meter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Are you liberal or conservative?</h1>
+      <p>To find out, determine whether you hold the following values:</p>
+      <div class="radio">
+        <label for="weak">Caring for the weak</label>
+          <select id="weak">
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
+        </div>
+        <div class="radio">
+          <label for="fairness">Fairness</label>
+            <select id="fairness">
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+        </div>
+        <div class="radio">
+          <label for="liberty">Liberty</label>
+            <select id="liberty">
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+        </div>
+        <div class="radio">
+          <label for="loyalty">Loyalty</label>
+            <select id="loyalty">
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+        </div>
+        <div class="radio">
+          <label for="respect">Respect for authority</label>
+            <select id="respect">
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+        </div>
+        <div class="radio">
+          <label for="sanctity">Sanctity</label>
+            <select id="sanctity">
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+        </div>
+        <button type="submit" class="btn ourButton">Submit</button>
+
+        <div id="answer">
+          <p>Based on your answers, you hold <span id="value"></span> values.</p>
+        </div>
+    </div>
+  </body>
